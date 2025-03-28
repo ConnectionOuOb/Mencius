@@ -97,7 +97,12 @@ class _MainPageState extends State<MainPage> {
                             },
                           );
                         },
-                        child: Container(color: Colors.purpleAccent.withOpacity(0.3)),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5),
+                            color: Colors.purpleAccent.withOpacity(0.2),
+                          ),
+                        ),
                       ),
                     );
                   }).toList(),
