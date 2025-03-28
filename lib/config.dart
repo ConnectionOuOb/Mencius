@@ -49,4 +49,19 @@ List<PopImage> popImages = [
   PopImage(1900, 1910, 880, 130, 'reference/6.3.png', '6.3', ''),
   PopImage(1900, 2050, 880, 230, 'reference/6.4.png', '6.4', ''),
   PopImage(1900, 2290, 880, 130, 'reference/6.5.png', '6.5', ''),
+
+  // ### 7.
+  PopImage(2850, 465, 830, 220, 'reference/7.1.png', '7.1', ''),
+  PopImage(2850, 695, 830, 230, 'reference/7.2.png', '7.2', ''),
+  PopImage(2850, 940, 830, 230, 'reference/7.3.png', '7.3', ''),
+  PopImage(2850, 1185, 830, 280, 'reference/7.4.png', '7.4', ''),
+  PopImage(2850, 1480, 830, 200, 'reference/7.5.png', '7.5', ''),
+  PopImage(2850, 1690, 830, 190, 'reference/7.6.png', '7.6', ''),
+
+  // ### 8.
+  PopImage(2850, 2060, 830, 270, 'reference/8.1.png', '8.1', ''),
+  PopImage(2850, 2350, 830, 230, 'reference/8.2.png', '8.2', ''),
+  PopImage(2850, 2625, 830, 230, 'reference/8.3.png', '8.3', ''),
+  PopImage(2850, 2915, 830, 260, 'reference/8.4.png', '8.4', ''),
+  PopImage(2850, 3200, 830, 230, 'reference/8.5.png', '8.5', ''),
 ];
