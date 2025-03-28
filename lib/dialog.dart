@@ -46,7 +46,7 @@ Widget popUpImage(BuildContext context, PopImage popImage) {
           },
         ),
         actionsAlignment: MainAxisAlignment.center,
-        actions: [
+        /*actions: [
           Text2Speech(
             popImage: popImage,
             onOpen: () {
@@ -55,7 +55,7 @@ Widget popUpImage(BuildContext context, PopImage popImage) {
               });
             },
           ),
-        ],
+        ],*/
       );
     },
   );

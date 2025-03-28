@@ -1,45 +1,103 @@
 import 'object.dart';
 
 double factor = 1;
-String tabName = '易方陣';
+String tabName = '孟子全覽圖';
 List<PopImage> popImages = [
   // ### 1.
-  PopImage(483, 405, 200, 260, 'reference/12.jpeg', '果斷決定 穀雨 4月19日:', '天氣較暖，雨量增加，是北方春耕作物播種的好季節，因為有雨水滋潤大地。'),
-  PopImage(762, 405, 200, 260, 'reference/13.jpeg', '大有可容 清明 4月4日:', '天氣晴朗溫暖，草木始發新枝芽，萬物開始生長，農民忙於春耕春種。人們在門口插上楊柳條，到郊外踏青，以及祭掃墳墓。'),
-  PopImage(1040, 405, 200, 260, 'reference/14.jpeg', '大壯震動 春分 3月20日:', '這一天南北兩半球晝夜相等。大部分地區越冬作物進入春季生長階段'),
-  PopImage(1319, 405, 200, 260, 'reference/15.jpeg', '小處修補 驚蟄 3月5日:', '天氣轉暖，春雷震響，蟄伏在泥土裏的各種冬眠動物蘇醒過來開始活動，大部分地區進入春耕'),
-  PopImage(1597, 405, 200, 260, 'reference/16.jpeg', '需安以待 雨水 2月18日:', '春風遍吹，天氣漸暖，冰雪溶化，空氣濕潤，雨水增多。'),
-  PopImage(1875, 405, 200, 260, 'reference/17.jpeg', '大大整備 立春 2月3日:', '開始進入春天，萬物復蘇。'),
+  PopImage(970, 465, 870, 200, 'reference/1.1.png', '1.1', ''),
+  PopImage(970, 675, 870, 140, 'reference/1.2.png', '1.2', ''),
+  PopImage(970, 820, 870, 190, 'reference/1.3.png', '1.3', ''),
+  PopImage(970, 1020, 870, 100, 'reference/1.4.png', '1.4', ''),
+  PopImage(970, 1130, 870, 250, 'reference/1.5.png', '1.5', ''),
 
   // ### 2.
-  PopImage(203, 780, 200, 260, 'reference/21.jpeg', '行動合理 立夏 5月5日:', '溫度明顯升高，雷雨增多，農作物進入生長的旺季，'),
-  PopImage(2150, 780, 200, 260, 'reference/28.jpeg', '面對問題 大寒 1月19日:', '天氣寒冷到了極點，是一年中最冷的時候。'),
+  PopImage(20, 465, 870, 120, 'reference/2.1.png', '2.1', ''),
+  PopImage(20, 590, 870, 120, 'reference/2.2.png', '2.2', ''),
+  PopImage(20, 715, 870, 120, 'reference/2.3.png', '2.3', ''),
+  PopImage(20, 840, 870, 120, 'reference/2.4.png', '2.4', ''),
+  PopImage(20, 965, 870, 130, 'reference/2.5.png', '2.5', ''),
+  PopImage(20, 1095, 870, 120, 'reference/2.6.png', '2.6', ''),
+  PopImage(20, 1220, 870, 140, 'reference/2.7.png', '2.7', ''),
 
   // ### 3.
-  PopImage(203, 1150, 200, 260, 'reference/31.jpeg', '共同合作 小滿 5月20日:', '大麥、冬小麥等夏收作物，已經結果、籽粒飽滿，但尚未成熟。'),
-  PopImage(2150, 1150, 200, 260, 'reference/38.jpeg', '忍受逼迫 小寒 1月5日:', '開始進入寒冷季節。冷氣積久而寒，大部分地區進入嚴寒時期。'),
+  PopImage(1900, 465, 880, 180, 'reference/3.1.png', '3.1', ''),
+  PopImage(1900, 655, 880, 170, 'reference/3.2.png', '3.2', ''),
+  PopImage(1900, 835, 880, 170, 'reference/3.3.png', '3.3', ''),
+  PopImage(1900, 1015, 880, 160, 'reference/3.4.png', '3.4', ''),
+  PopImage(1900, 1190, 880, 160, 'reference/3.5.png', '3.5', ''),
 
   // ### 4.
-  PopImage(203, 1520, 200, 260, 'reference/41.jpeg', '不妄無災 芒種 6月5日:', '小麥等有芒作物成熟，宜開始秋播，如晚穀、黍、稷等。長江中下游地區將進入黃梅季節，連綿陰雨'),
-  PopImage(2150, 1520, 200, 260, 'reference/48.jpeg', '一陽復始 冬至 12月21日:', '這一天，陽光幾乎直射南回歸線，北半球白晝最短，黑夜最長。'),
+  PopImage(970, 1530, 870, 100, 'reference/4.1.png', '4.1', ''),
+  PopImage(970, 1640, 870, 330, 'reference/4.2.png', '4.2', ''),
+  PopImage(970, 1980, 870, 220, 'reference/4.3.png', '4.3', ''),
+  PopImage(970, 2210, 870, 90, 'reference/4.4.png', '4.4', ''),
+  PopImage(970, 2310, 870, 110, 'reference/4.5.png', '4.5', ''),
 
   // ### 5.
-  PopImage(203, 1890, 200, 260, 'reference/51.jpeg', '陰制於陽 夏至 6月20日:', '陽光直射北回歸線，白天最長。從這一天起，進入炎熱季節，萬物生長最旺盛。'),
-  PopImage(2150, 1890, 200, 260, 'reference/58.jpeg', '隨機浮升 大雪 12月6日:', '黃河流域一帶漸有積雪；而北方已是萬里冰封。'),
+  PopImage(20, 1530, 870, 110, 'reference/5.1.png', '5.1', ''),
+  PopImage(20, 1650, 870, 100, 'reference/5.2.png', '5.2', ''),
+  PopImage(20, 1750, 870, 100, 'reference/5.3.png', '5.3', ''),
+  PopImage(20, 1860, 870, 100, 'reference/5.4.png', '5.4', ''),
+  PopImage(20, 1970, 870, 100, 'reference/5.5.png', '5.5', ''),
+  PopImage(20, 2080, 870, 90, 'reference/5.6.png', '5.6', ''),
+  PopImage(20, 2180, 870, 120, 'reference/5.7.png', '5.7', ''),
+  PopImage(20, 2310, 870, 120, 'reference/5.8.png', '5.8', ''),
 
   // ### 6.
-  PopImage(203, 2260, 200, 260, 'reference/61.jpeg', '易起爭訟 小暑 7月6日:', '正值初伏前後，天氣很熱但尚未酷熱，忙於夏秋作物的工作。'),
-  PopImage(2150, 2260, 200, 260, 'reference/68.jpeg', '興師聚眾 小雪 11月21日:', '氣溫下降，黃河流域開始降雪；北方已進入封凍季節。'),
+  PopImage(1900, 1530, 880, 230, 'reference/6.1.png', '6.1', ''),
+  PopImage(1900, 1770, 880, 130, 'reference/6.2.png', '6.2', ''),
+  PopImage(1900, 1910, 880, 130, 'reference/6.3.png', '6.3', ''),
+  PopImage(1900, 2050, 880, 230, 'reference/6.4.png', '6.4', ''),
+  PopImage(1900, 2290, 880, 130, 'reference/6.5.png', '6.5', ''),
 
   // ### 7.
-  PopImage(203, 2630, 200, 260, 'reference/71.jpeg', '退縮不前 大暑 7月22日:', '正值中伏前後，一年最炎熱時期，喜溫作物迅速生長；雨水甚多。'),
-  PopImage(2150, 2630, 200, 260, 'reference/78.jpeg', '謙沖寡慾 立冬 11月7日:', '冬季開始，一年的田間操作結束，作物收割之後要收藏起來。'),
+  PopImage(2850, 465, 830, 220, 'reference/7.1.png', '7.1', ''),
+  PopImage(2850, 695, 830, 230, 'reference/7.2.png', '7.2', ''),
+  PopImage(2850, 940, 830, 230, 'reference/7.3.png', '7.3', ''),
+  PopImage(2850, 1185, 830, 280, 'reference/7.4.png', '7.4', ''),
+  PopImage(2850, 1480, 830, 200, 'reference/7.5.png', '7.5', ''),
+  PopImage(2850, 1690, 830, 190, 'reference/7.6.png', '7.6', ''),
 
   // ### 8.
-  PopImage(483, 3000, 200, 260, 'reference/82.jpeg', '萃匯人氣 立秋 8月7日:', '秋天開始，氣溫逐漸下降；中部地區早稻收割，晚稻開始移栽。'),
-  PopImage(762, 3000, 200, 260, 'reference/83.jpeg', '柔進上行 處暑 8月22日:', '氣候變涼的象徵，表示暑天終止，夏季火熱已經到了盡頭。'),
-  PopImage(1040, 3000, 200, 260, 'reference/84.jpeg', '順勢豫備 白露 9月7日:', '天氣轉涼，地面水汽結露。'),
-  PopImage(1319, 3000, 200, 260, 'reference/85.jpeg', '多方觀察 秋分 9月22日:', ' 陽光直射赤道，晝夜幾乎相等。北方秋收秋種。'),
-  PopImage(1597, 3000, 200, 260, 'reference/86.jpeg', '彼此靠近 寒露 10月7日:', '天氣轉涼，露水日多。'),
-  PopImage(1875, 3000, 200, 260, 'reference/87.jpeg', '日漸剝落 霜降 10月23日:', '天氣已冷，開始有霜凍。南方仍可秋收秋種'),
+  PopImage(2850, 2060, 830, 270, 'reference/8.1.png', '8.1', ''),
+  PopImage(2850, 2350, 830, 230, 'reference/8.2.png', '8.2', ''),
+  PopImage(2850, 2625, 830, 230, 'reference/8.3.png', '8.3', ''),
+  PopImage(2850, 2915, 830, 260, 'reference/8.4.png', '8.4', ''),
+  PopImage(2850, 3200, 830, 230, 'reference/8.5.png', '8.5', ''),
+
+  // ### 9.
+  PopImage(1450, 2590, 650, 260, 'reference/9.1.png', '9.1', ''),
+  PopImage(1450, 2860, 650, 300, 'reference/9.2.png', '9.2', ''),
+  PopImage(1450, 3185, 650, 260, 'reference/9.3.png', '9.3', ''),
+  PopImage(2120, 2590, 650, 260, 'reference/9.4.png', '9.4', ''),
+  PopImage(2120, 2860, 650, 230, 'reference/9.5.png', '9.5', ''),
+  PopImage(2120, 3110, 650, 350, 'reference/9.6.png', '9.6', ''),
+
+  // ### 10.
+  PopImage(20, 2590, 650, 240, 'reference/10.1.png', '10.1', ''),
+  PopImage(20, 2840, 650, 240, 'reference/10.2.png', '10.2', ''),
+  PopImage(20, 3090, 650, 370, 'reference/10.3.png', '10.3', ''),
+  PopImage(690, 2590, 670, 360, 'reference/10.4.png', '10.4', ''),
+  PopImage(690, 2970, 670, 260, 'reference/10.5.png', '10.5', ''),
+
+  // ### 11.
+  PopImage(-1200, 465, 1150, 140, 'reference/11.1.png', '11.1', ''),
+  PopImage(-1200, 610, 1150, 140, 'reference/11.2.png', '11.2', ''),
+  PopImage(-1200, 755, 1150, 140, 'reference/11.3.png', '11.3', ''),
+  PopImage(-1200, 900, 1150, 140, 'reference/11.4.png', '11.4', ''),
+  PopImage(-1200, 1045, 1150, 140, 'reference/11.5.png', '11.5', ''),
+  PopImage(-1200, 1190, 1150, 130, 'reference/11.6.png', '11.6', ''),
+  PopImage(-1200, 1325, 1150, 130, 'reference/11.7.png', '11.7', ''),
+  PopImage(-1200, 1460, 1150, 135, 'reference/11.8.png', '11.8', ''),
+  PopImage(-1200, 1600, 1150, 150, 'reference/11.9.png', '11.9', ''),
+  PopImage(-1200, 1755, 1150, 140, 'reference/11.10.png', '11.10', ''),
+
+  // ### 12.
+  PopImage(-1200, 2060, 1150, 190, 'reference/12.1.png', '12.1', ''),
+  PopImage(-1200, 2270, 1150, 190, 'reference/12.2.png', '12.2', ''),
+  PopImage(-1200, 2470, 1150, 190, 'reference/12.3.png', '12.3', ''),
+  PopImage(-1200, 2670, 1150, 190, 'reference/12.4.png', '12.4', ''),
+  PopImage(-1200, 2870, 1150, 190, 'reference/12.5.png', '12.5', ''),
+  PopImage(-1200, 3075, 1150, 190, 'reference/12.6.png', '12.6', ''),
+  PopImage(-1200, 3275, 1150, 190, 'reference/12.7.png', '12.7', ''),
 ];
