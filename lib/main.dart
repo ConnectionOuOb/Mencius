@@ -39,9 +39,10 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
+    double deviceRatio = MediaQuery.of(context).devicePixelRatio;
     Size screenSize = MediaQuery.of(context).size;
-    double imageWidth = 2481;
-    double imageHeight = 3544;
+    double imageWidth = 3308 / deviceRatio;
+    double imageHeight = 2339 / deviceRatio;
     double imageRatio = imageWidth / imageHeight;
     double needWidth = screenSize.height * imageRatio;
     double needHeight = screenSize.width / imageRatio;
@@ -77,7 +78,7 @@ class _MainPageState extends State<MainPage> {
                 alignment: Alignment.center,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("background/MainView.png"),
+                    image: AssetImage("assets/background/MainView.png"),
                     fit: BoxFit.contain,
                   ),
                 ),
