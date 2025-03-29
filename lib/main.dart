@@ -39,10 +39,9 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-    double deviceRatio = MediaQuery.of(context).devicePixelRatio;
     Size screenSize = MediaQuery.of(context).size;
-    double imageWidth = 3308 / deviceRatio;
-    double imageHeight = 2339 / deviceRatio;
+    double imageWidth = 3308;
+    double imageHeight = 2339;
     double imageRatio = imageWidth / imageHeight;
     double needWidth = screenSize.height * imageRatio;
     double needHeight = screenSize.width / imageRatio;
